@@ -2,7 +2,7 @@ FROM continuumio/anaconda:latest
 
 USER root
 
-RUN conda install -c maciejkula -c pytorch spotlight=0.1.5
+RUN pip install tensorflow
 
 LABEL io.k8s.description="Anaconda with spotlight" \
       io.k8s.display-name="Anaconda Spotligth" \
